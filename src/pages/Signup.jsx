@@ -18,8 +18,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
-  
-
+  import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -47,15 +46,23 @@ const Signup = () => {
   <CardHeader>
     <div className='yesflex yespb-5'>
     <CardTitle className='yesml-40 yestext-3xl yesfont-bold yesflex'>Create account 
+
+
     <ToggleGroup className='yesml-60 yesw-40 yesh-14 yesbg-slate-300 yesrounded-md' type="single">
+
       <ToggleGroupItem value="Patient" aria-label="Toggle bold">
         <p className="h-4 w-4">Patient</p>
       </ToggleGroupItem>
-      <ToggleGroupItem value="Doctor" aria-label="Toggle italic">
+ 
+<Link to='/signupdoc'>
+
+      <ToggleGroupItem value="Doctor" >
         <p className="h-4 w-4">
             Doctor
             </p>
+    
       </ToggleGroupItem>
+</Link>
       </ToggleGroup>
     </CardTitle>
 
@@ -93,7 +100,13 @@ const Signup = () => {
     </button>
   </CardFooter>
   <h1 className='yesml-80'>
-    Already have an account? <span className='yestext-docblue yesml-3'>Log in</span>
+    Already have an account?
+    
+    <Link to='/login'>
+     <button
+        className='yestext-docblue yesml-3'>Log in
+        </button>
+        </Link>
   </h1>
 </Card>
         </div>

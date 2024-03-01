@@ -21,11 +21,14 @@ import {
   } from "@/components/ui/select"
 
 import { Label } from "@/components/ui/label"
+import { Link } from 'react-router-dom'
 
 
 const Signupdoctor= () => {
   return (
       <>
+      <div >
+
    <div className='yesflex yesjustify-between'>
     <div className='yesbg-docblue yesh-lvh yesw-[100rem] yesflex yesflex-col  '>
         <p className='yestext-white yestext-4xl yesfont-bold yesw-40 yesfontbold yesml-20 yesmt-20'>
@@ -53,13 +56,19 @@ const Signupdoctor= () => {
     <div className='yesflex yespb-5'>
     <CardTitle className='yesml-40 yestext-3xl yesfont-bold yesflex'>Create account 
     <ToggleGroup className='yesml-60 yesw-40 yesh-14 yesbg-slate-300 yesrounded-md' type="single">
+      <Link to='/signup'>
+
       <ToggleGroupItem value="Patient" aria-label="Toggle bold">
         <p className="h-4 w-4">Patient</p>
       </ToggleGroupItem>
-      <ToggleGroupItem value="Doctor" aria-label="Toggle italic">
+      </Link>
+ 
+      <ToggleGroupItem  to='/signupdoc' value="Doctor" aria-label="Toggle italic">
+   
         <p className="h-4 w-4">
             Doctor
             </p>
+      
       </ToggleGroupItem>
       </ToggleGroup>
     </CardTitle>
@@ -67,7 +76,7 @@ const Signupdoctor= () => {
     </div>
     <CardTitle className='yesw-[40rem] yesh-14 yesflex yesjustify-between yesml-32'>
         <button className='yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg'>
-            <img  className='yesml-2 'src='./public/google.svg' >
+            <img  className='yesml-2 yesmt-2 'src='./public/google.svg' >
             </img>
         <p className='yesmt-2'>
             Signup with Google
@@ -101,11 +110,16 @@ const Signupdoctor= () => {
     </button>
   </CardFooter>
   <h1 className='yesml-80'>
-    Already have an account? <span className='yestext-docblue yesml-3'>Log in</span>
+    Already have an account?
+     <Link to="/login" >
+     <button className='yestext-docblue yesml-3'> 
+      Log in</button>
+      </Link>
   </h1>
 </Card>
         </div>
     </div> 
+      </div>
     </>
   )
 }

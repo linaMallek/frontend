@@ -8,10 +8,7 @@ import {
     CardTitle,
   } from "@/components/ui/card"
   import { Input } from "@/components/ui/input"
-  import {
-    ToggleGroup,
-    ToggleGroupItem,
-  } from "@/components/ui/toggle-group"
+import { Link } from 'react-router-dom'
   import {
     DropdownMenu,
     DropdownMenuContent,
@@ -85,9 +82,6 @@ const Login = () => {
         Create account
     </button>
   </CardFooter>
-  <h1 className='yesml-80'>
-    Already have an account? <span className='yestext-docblue yesml-3'>Log in</span>
-  </h1>
 </Card>
         </div>
     </div> 
