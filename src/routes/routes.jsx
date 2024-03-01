@@ -8,7 +8,7 @@ import Doctormain from '@/pages/Doctormain';
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Index />}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
       <Route path="/signupdoc" element={<Signupdoctor/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
