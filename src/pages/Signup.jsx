@@ -30,7 +30,7 @@ const Signup = () => {
           </p>
           <img
             className="yesh-[33.4rem] yesmt-1 yesw-[30rem]"
-            src="./public/patient.svg"
+            src="/patient.svg"
             alt=""
           />
         </div>
@@ -69,11 +69,11 @@ const Signup = () => {
               </div>
               <CardTitle className="yesw-[40rem] yesh-14 yesflex yesjustify-between yesml-32">
                 <button className="yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg">
-                  <img className="yesml-2 " src="./public/google.svg"></img>
+                  <img className="yesml-2 " src="/google.svg"></img>
                   <p className="yesmt-2">Signup with Google</p>
                 </button>
                 <button className="yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg">
-                  <img className=" yesmt-2 " src="./public/facebook.svg"></img>
+                  <img className=" yesmt-2 " src="/facebook.svg"></img>
                   <p className="yesmt-2">Signup with Facebook</p>
                 </button>
               </CardTitle>

@@ -35,7 +35,7 @@ const Signupdoctor= () => {
         Getting </p>
         <p className='yestext-white yestext-4xl yesfont-bold yesw-60 yesfontbold yesml-20'>Started With MeDz
         </p>
-        <img className='yesh-[33.4rem] yesmt-1 yesw-[30rem]' src="./public/login.svg" alt="" />
+        <img className='yesh-[33.4rem] yesmt-1 yesw-[30rem]' src="/login.svg" alt="" />
       </div>
         <div className='yesflex yesjustify-end'>
         <Card className='yesh-lvh yesw-[60rem] yesrounded-lg'>
@@ -76,14 +76,14 @@ const Signupdoctor= () => {
     </div>
     <CardTitle className='yesw-[40rem] yesh-14 yesflex yesjustify-between yesml-32'>
         <button className='yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg'>
-            <img  className='yesml-2 yesmt-2 'src='./public/google.svg' >
+            <img  className='yesml-2 yesmt-2 'src='/google.svg' >
             </img>
         <p className='yesmt-2'>
             Signup with Google
             </p>
         </button>
         <button className='yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg'>
-            <img  className=' yesmt-2 'src='./public/facebook.svg' >
+            <img  className=' yesmt-2 'src='/facebook.svg' >
             </img>
         <p className='yesmt-2'>
             Signup with Facebook

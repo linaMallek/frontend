@@ -19,7 +19,7 @@ export default function Services() {
           <CardHeader>
             <CardTitle className="yesflex yesjustify-center">
               {" "}
-              <img className="yesh-14" src="./public/Chat.svg"></img>
+              <img className="yesh-14" src="/Chat.svg"></img>
             </CardTitle>
             <CardDescription className=" yestext-lg yesml-5 yestext-center yesw-56 yestextblack yesfont-bold">
               <p className="yestext-black">
@@ -44,7 +44,7 @@ export default function Services() {
           <CardHeader>
             <CardTitle className="yesflex yesjustify-center">
               {" "}
-              <img className="yesh-14" src="./public/Message Bot.svg"></img>
+              <img className="yesh-14" src="/Message Bot.svg"></img>
             </CardTitle>
             <CardDescription className="yestext-lg yesm-10 yesw-56 yestext-black yesfont-bold">
               <p className="yestext-black yesml-6">Full access to Ai Chat</p>
@@ -68,7 +68,7 @@ export default function Services() {
               {" "}
               <img
                 className="yesh-14"
-                src="./public/Heart with Pulse.svg"
+                src="/Heart with Pulse.svg"
               ></img>
             </CardTitle>
             <CardDescription className="yestext-lg yesml-16 yesw-56 yestext-black yesfont-bold">
@@ -93,7 +93,7 @@ export default function Services() {
           <CardHeader>
             <CardTitle className="yesflex yesjustify-center">
               {" "}
-              <img className="yesh-14" src="./public/Today.svg"></img>
+              <img className="yesh-14" src="/Today.svg"></img>
             </CardTitle>
             <CardDescription className="yestext-lg yesflex yesml-14 yesjustify-center yesw-40 yestext-black yesfont-bold">
               <p className="yestext-black">
@@ -116,7 +116,7 @@ export default function Services() {
           <CardHeader>
             <CardTitle className="yesflex yesjustify-center">
               {" "}
-              <img className="yesh-16" src="./public/place marker.svg"></img>
+              <img className="yesh-16" src="/place marker.svg"></img>
             </CardTitle>
             <CardDescription className="yestext-lg yesm-10 yesw-56 yestext-black yesfont-bold">
               <p className="yestext-black">Find the right doctor for you!</p>

@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <div className='yesbg-primary yesflex yesjustify-around yespt-4'>
         <div className='yesflex yesflex-col'>
-      <img src='./public/logo.svg'></img>
+      <img src='/logo.svg'></img>
       <h1 className='yestext-2xl yestext-white yespt-5'>
       Medzone@gmail.com
       </h1>

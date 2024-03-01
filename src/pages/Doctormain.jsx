@@ -34,11 +34,11 @@ const Doctormain = () => {
         <p className='yesml-10 yestext-xl'>Here are your recent Tasks. updates and Appointments </p>
     </div>
     <div className='yesflex yesml-96 yesmt-10'>
-        <img className='yesh-7' src='./public/message.svg'></img>
-        <img className='yesh-7 yesml-14' src='./public/notifications.svg'></img>
+        <img className='yesh-7' src='/message.svg'></img>
+        <img className='yesh-7 yesml-14' src='/notifications.svg'></img>
         <Select>
   <SelectTrigger className="yesw-[180px] yesml-10">
-    <img src='./public/profilepic.svg'>
+    <img src='/profilepic.svg'>
     </img>
     <SelectValue className='yestext-bold yestext-xl yesml-10'placeholder="Dr. Fares" />
   </SelectTrigger>
@@ -53,7 +53,7 @@ const Doctormain = () => {
   </div>
   <Card className='yesw-80 yesh-72 yesshadow-xl '>
   <CardHeader>
-    <CardTitle className='yesflex yesjustify-center'> <img className='yesh-14' src='./public/Chat.svg' ></img></CardTitle>
+    <CardTitle className='yesflex yesjustify-center'> <img className='yesh-14' src='/Chat.svg' ></img></CardTitle>
     <CardDescription className=' yestext-lg yesml-5 yestext-center yesw-56 yestextblack yesfont-bold'>
       <p className='yestext-black'>
       Connect with your doctor instantly!

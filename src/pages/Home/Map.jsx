@@ -8,10 +8,10 @@ const Map = () => {
     <h1 className='yestext-5xl yesfont-bold'> Map</h1>
     </div>
     <div className='yesflex'>
-      <img className=' ' src='./public/Vector 2.svg'/>
+      <img className=' ' src='/Vector 2.svg'/>
       <div className='yesflex yesjustify-center'>
 
-        <img className='yesabsolute ' src="./public/Map.svg" />
+        <img className='yesabsolute ' src="/Map.svg" />
       </div>
     </div>
     </>
