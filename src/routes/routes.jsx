@@ -1,5 +1,5 @@
-import React from 'react'
-import Home from '@/pages/Home';
+import React from "react";
+import Index from "@/pages/Home/Index.jsx";
 import { Routes, Route } from "react-router-dom";
 import Signup from '@/pages/Signup';
 import Signupdoctor from '@/pages/Signupdoctor';
