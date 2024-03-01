@@ -11,7 +11,7 @@ export default function About() {
           patients, simplifying communication and improving healthcare
           interactions.
         </p>
-        <img className="yesw-32" src="./public/logo.svg"></img>
+        <img className="yesw-32 yesh-20" src="./public/logo blue.svg"></img>
       </div>
       <img
         className="yesw-1/3 yesh-1/3 yesself-end"

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Routers from "./routes/Routes.jsx";
+import Routers from "./routes/routes.jsx";
 
 function App() {
   return (

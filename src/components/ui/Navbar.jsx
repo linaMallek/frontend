@@ -25,7 +25,7 @@ export default function Navbar() {
         showBorderBottom ? "yesborder-b-2" : ""
       }`}
     >
-      <img src="./public/logo.svg" className="yesw-40"></img>
+      <img src="./Logo blue.svg" className="yesw-40"></img>
 
       <div className="yesfont-semibold yesflex yesgap-10">
         <m.button
