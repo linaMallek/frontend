@@ -1,7 +1,13 @@
 import React from 'react'
+import Home from '@/pages/Home';
+import { Routes, Route } from "react-router-dom";
 
-export default function routes() {
+const Routers = () => {
   return (
-    <div>routes</div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+    </Routes>
+  );
+};
+
+export default Routers;

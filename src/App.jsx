@@ -1,5 +1,11 @@
+import { Fragment } from "react";
+import Routers from "./routes/Routes.jsx";
+
 function App() {
-  return <>salam</>;
+  return (
+    <Fragment>
+      <Routers />
+    </Fragment>);
 }
 
 export default App;
