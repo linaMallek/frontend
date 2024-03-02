@@ -1,7 +1,8 @@
-import axios from 'axios';
+import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: 'https://medflow.onrender.com',
+  // baseURL: "https://healthbooth-backend.onrender.com/",
+  baseURL: "http://localhost:5001/",
   // other config options if needed
 });
 
