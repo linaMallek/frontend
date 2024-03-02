@@ -83,7 +83,7 @@ const Signupdoctor= () => {
             </p>
         </button>
         <button className='yesflex yesjustify-around yesw-[15rem] yestext-lg yesmt-3 yesborder yesrounded-lg'>
-            <img  className=' yesmt-2 'src='/facebook.svg' >
+            <img  className=' yesmt-2 'src='/Facebook.svg' >
             </img>
         <p className='yesmt-2'>
             Signup with Facebook
