@@ -129,7 +129,9 @@ const Signup = () => {
 
                 <Input
                   className={`${
-                    formik.touched.Nom && formik.errors.Nom && "yesborder-red-500"
+                    formik.touched.Nom &&
+                    formik.errors.Nom &&
+                    "yesborder-red-500"
                   }`}
                   type="text"
                   placeholder="Full name"
@@ -178,7 +180,8 @@ const Signup = () => {
             <CardFooter className="yesflex yesjustify-center yesw-[60rem] yespt-10">
               <button
                 type="submit"
-              className="yesrounded-lg yesw-[37rem] yesh-10 yesborder yesbg-docblue yestext-white yesfont-semibold yestext-xl">
+                className="yesrounded-lg yesw-[37rem] yesh-10 yesborder yesbg-docblue yestext-white yesfont-semibold yestext-xl"
+              >
                 Create account
               </button>
             </CardFooter>
