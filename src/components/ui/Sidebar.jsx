@@ -10,8 +10,11 @@ const Sidebar = () => {
             <img className='yesml-4 yesmt-5 yesh-12' src='Fichier 2 2.svg'>
             
             </img>
+            <Link to='/'>
             <img className='yesmt-24 yesh-5 yesml-8' src='./public/Home.svg'>
             </img>
+
+            </Link>
             <Link to='/patient'>
 
             <img className='yesmt-10 yesh-5 yesml-8' src='./public/Patients.svg'>
