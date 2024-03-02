@@ -196,12 +196,11 @@ export default function HeartPrediction() {
           </div>
         </form>
 
-        <p>prediction is {prediction}</p>
         {prediction !== null && (
           <div>
             <h3>Résultat de la prédiction :</h3>
             <p>
-              {prediction === '0'
+              {prediction === "0"
                 ? "Le patient n'est pas malade"
                 : "Le patient est malade"}
             </p>
