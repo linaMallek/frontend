@@ -30,7 +30,7 @@ const Login = () => {
          MeDz
         </p>
     
-        <img className='yesh-[33.4rem] yesmt-1 yesw-[30rem]' src="/login.svg" alt="" />
+        <img className='yesh-[33.4rem] yesmt-1 yesw-[30rem]' src="/Login.svg" alt="" />
       </div>
         <div className='yesflex yesjustify-end'>
         <Card className='yesh-lvh yesw-[60rem] yesrounded-xl'>
