@@ -4,6 +4,10 @@
 
 This project is a [brief description of your project]. It utilizes React, Vite, JavaScript, Tailwind CSS, and Shadow DOM to create [mention what your project does or its purpose].
 
+## Links : 
+Slides : https://www.canva.com/design/DAF-TK8qmlY/i__JF1r5jY4blSzb1lpnEg/edit?utm_content=DAF-TK8qmlY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Figma : https://www.figma.com/file/P7uNc9kOzJdwFXwj3MpnCT/weTabib?type=design&node-id=0%3A1&mode=design&t=AvKmTQzAbkMS0KVw-1
+
 ## Table of Contents
 
 - [Installation](#installation)
