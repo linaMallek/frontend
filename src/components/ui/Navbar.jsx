@@ -75,10 +75,26 @@ export default function Navbar() {
         </m.button>
       </div>
       <div className="yesflex yesgap-5">
-        <button className=" yestext-textblue">Log in</button>
-        <button className=" yesrounded-3xl yesbg-docblue yestext-white yespx-4 yespy-2">
+        <m.button
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            window.location.href = "/login";
+          }}
+          className=" yestext-textblue"
+        >
+          Log in
+        </m.button>
+        <m.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            window.location.href = "/signup";
+          }}
+          className=" yesrounded-3xl yesbg-docblue yestext-white yespx-4 yespy-2"
+        >
           Sign up
-        </button>
+        </m.button>
       </div>
     </div>
   );
