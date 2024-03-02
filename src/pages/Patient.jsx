@@ -26,7 +26,7 @@ import {
   
 
 
-const Doctormain = () => {
+const Patient = () => {
   return (
     <>
     <div className='yesflex'>
@@ -36,81 +36,53 @@ const Doctormain = () => {
   <div className='yesflex yesw-lvh'>
 
 <div className='yesml-10'>
-        <p className='yesml-10 yesmt-5 yestext-xl yesfont-medium'>
-            Welcome
-        </p>
-    <p className='yesml-10 yesmt-2 yestext-2xl yesfont-bold yestext-docblue'>
-            Dr. Fares Slimani!
-        </p>
-        <p className='yesml-10 yesmb-2 yestext-lg'>Here are your recent Tasks. updates and Appointments </p>
 
   <Card className='yesw-[45rem] yesh-[17rem] yesshadow-xl '>
     <CardHeader>
     <CardTitle className='yesflex yesjustify-center'> </CardTitle>
-    <CardDescription className=' yestext-lg  yesflex yesjustify-around  yestextblack yesfont-bold'>
+    <CardDescription className=' yestext-lg  yesflex   yestextblack yesfont-bold'>
       <p className='yestext-black yestext-xl yesmt-[-1rem] yesmb-1 yesw-[45rem}'>
-      Upcoming appointments
+      Patient Profile
       </p>
       </CardDescription>
   </CardHeader>
-  <CardContent className='yesflex yesjustify-around yesw-[45rem]'>
-    <p className='yesopacity-70  yesmt-[-1rem]'>Date.</p>
-    <p className='yesopacity-70 yesmt-[-1rem]'>Time.</p>
-    <p className='yesopacity-70  yesmt-[-1rem]'>Description.</p>
-  </CardContent>
 
 
+
+  <div className='yesflex yesml-10'>
   <CardDescription 
-  className=' yesmb-1 yesborder-b-2 yesh-5 yesflex yesjustify-around yesw-[45rem]  yestextblack yesfont-semibold'>
-      <p className='yestext-black yesmt-[-1rem]  '>
-      01 January 2024
+  className=' yesmb-1 yesh-5 yesflex  yesw-[45rem]  yestextblack yesfont-semibold'>
+    <div>
+
+    <img className='yesh-10' src='Image.png'>
+    </img>
+<div>
+</div>
+    <div className='yesml-5 yesflex yesflex-col'>
+
+      <p className='yestext-black yesmt-1  '>
+      Katia Lounas 
       </p> 
-      <p className='yestext-black yesmt-[-1rem]  '>
-      9:00h-10:00h
+      <p>
+        20 Years old
       </p>
-      <p className='yestext-black yesmt-[-1rem] '>
-      Tooth extraction
-      </p>
+    </div>
+    </div>
+    <div className='yesflex  yesalign-end yesflex-col'>
+
+    <p>Email: katiaLounas@gmail.com</p>
+    <p>Phone number : 05 66 74 77 90</p>
+    <p>Blood type : B+</p>
+    <p>Height : 1.70</p>
+    <p>Weight : 60kg</p>
+    </div>
       </CardDescription>
+      </div>
       <CardContent className='yesflex yesjustify-around yesw-[45rem]'>
-    <p className='yesopacity-70 yesmt '>Date.</p>
-    <p className='yesopacity-70 '>Time.</p>
-    <p className='yesopacity-70 '>Description.</p>
+   
   </CardContent>
 
 
-
-
-
- <CardDescription 
-  className=' yesmb-1 yesh-5 yestext-lg yesborder-b-2  yesflex yesjustify-around yesw-[45rem]  yestextblack yesfont-semibold'>
-      <p className='yestext-black yesmt-[-1rem]  '>
-      01 January 2024
-      </p> 
-      <p className='yestext-black yesmt-[-1rem]  '>
-      9:00h-10:00h
-      </p>
-      <p className='yestext-black yesmt-[-1rem]  '>
-      Regular check-up
-      </p>
-      </CardDescription>
-      <CardContent className='yesflex yesjustify-around yesw-[45rem]'>
-    <p className='yesopacity-70 '>Date.</p>
-    <p className='yesopacity-70 '>Time.</p>
-    <p className='yesopacity-70 '>Description.</p>
-  </CardContent>
-  <CardDescription 
-  className=' yestext-lg yesh-5 yesflex yesjustify-around yesw-[45rem]  yestextblack yesfont-semibold'>
-      <p className='yestext-black yesmt-[-1rem]  '>
-      01 January 2024
-      </p> 
-      <p className='yestext-black yesmt-[-1rem] '>
-      9:00h-10:00h
-      </p>
-      <p className='yestext-black yesmt-[-1rem]'>
-      Teeth whitening
-      </p>
-      </CardDescription>
 </Card>
 
 
@@ -221,4 +193,4 @@ const Doctormain = () => {
   )
 }
 
-export default Doctormain
+export default Patient

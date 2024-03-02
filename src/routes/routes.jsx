@@ -6,6 +6,7 @@ import Signupdoctor from "@/pages/Signupdoctor";
 import Login from "@/pages/Login";
 import Doctormain from "@/pages/Doctormain";
 import ChatBot from "@/components/ChatBot.jsx";
+import Patient from "@/pages/Patient";
 const Routers = () => {
   return (
     <Routes>
@@ -15,6 +16,7 @@ const Routers = () => {
       <Route path="/login" element={<Login />}></Route>
       <Route path="/doctormain" element={<Doctormain />}></Route>
       <Route path="/chatbot" element={<ChatBot />}></Route>
+      <Route path="/patient" element={<Patient />}></Route>
     </Routes>
   );
 };
