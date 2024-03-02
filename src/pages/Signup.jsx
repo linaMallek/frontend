@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardContent,
@@ -17,13 +16,54 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 
+import React, { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import axios from "../config/axiosConfig.js";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Signup = () => {
+  const validationSchema = Yup.object({
+    fullName: Yup.string().required("Required"),
+    email: Yup.string().email("Invalid email address").required("Required"),
+    password: Yup.string().required("Required"),
+    phoneNumber: Yup.string().required("Required"),
+  });
+
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      password: "",
+      phoneNumber: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      axios
+        .post("/auth/signup", values)
+        .then((res) => {
+          console.log(response.data);
+          localStorage.setItem("token", response.data.token);
+          toast.success("Account created successfully");
+          // wait for 2 seconds before redirecting
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 2000);
+        })
+        .catch((err) => {
+          toast.error(err.response.data.message);
+        });
+    },
+  });
+
   return (
     <>
+      <ToastContainer />
       <div className="yesflex yesjustify-between">
         <div className="yesbg-docblue yesh-lvh yesw-[100rem] yesflex yesflex-col  ">
           <p className="yestext-white yestext-4xl yesfont-bold yesw-40 yesfontbold yesml-20 yesmt-20">
-            Getting{" "}
+            Getting
           </p>
           <p className="yestext-white yestext-4xl yesfont-bold yesw-60 yesfontbold yesml-20">
             Started With MeDz
@@ -82,13 +122,63 @@ const Signup = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="yesw-[40rem] yesml-40 yesh-[16rem] yesflex yesflex-col yesjustify-between">
-              <Input type="text" placeholder="Full name" />
-              <Input type="email" placeholder="Email" />
-              <Input type="password" placeholder="Password" />
-              <Input type="text" placeholder="Phone number" />
+              <form onSubmit={formik.handleSubmit}>
+                {formik.touched.fullName && formik.errors.fullName ? (
+                  <div>{formik.errors.fullName}</div>
+                ) : null}
+
+                <Input
+                  className={`${
+                    formik.touched.Nom && formik.errors.Nom && "yesborder-red-500"
+                  }`}
+                  type="text"
+                  placeholder="Full name"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.fullName}
+                />
+                <Input
+                  className={`${
+                    formik.touched.email &&
+                    formik.errors.email &&
+                    "yesborder-red-500"
+                  }`}
+                  type="email"
+                  placeholder="Email"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.email}
+                />
+                <Input
+                  className={`${
+                    formik.touched.password &&
+                    formik.errors.password &&
+                    "yesborder-red-500"
+                  }`}
+                  type="password"
+                  placeholder="Password"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.password}
+                />
+                <Input
+                  className={`${
+                    formik.touched.phoneNumber &&
+                    formik.errors.phoneNumber &&
+                    "yesborder-red-500"
+                  }`}
+                  type="text"
+                  placeholder="Phone number"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.phoneNumber}
+                />
+              </form>
             </CardContent>
             <CardFooter className="yesflex yesjustify-center yesw-[60rem] yespt-10">
-              <button className="yesrounded-lg yesw-[37rem] yesh-10 yesborder yesbg-docblue yestext-white yesfont-semibold yestext-xl">
+              <button
+                type="submit"
+              className="yesrounded-lg yesw-[37rem] yesh-10 yesborder yesbg-docblue yestext-white yesfont-semibold yestext-xl">
                 Create account
               </button>
             </CardFooter>
