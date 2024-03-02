@@ -52,9 +52,7 @@ export default function HeartPrediction() {
   return (
     <div className="yesbg-docblue yesh-screen yesflex">
       <div className="yesbg-white yespy-6 yesh-fit yesw-3/5 yesm-auto yesshadow-xl yesrounded-xl yesflex yesflex-col yesjustify-center yesitems-center yesgap-16 yespx-16">
-        <h2
-         className="yestext-3xl"
-        >Prediction</h2>
+        <h2 className="yestext-3xl">Prediction</h2>
         <form onSubmit={handleSubmit} className="yesflex yesflex-col yesgap-5">
           <div className="yesflex yesgap-6">
             <label htmlFor="feature1">Age:</label>
@@ -189,10 +187,16 @@ export default function HeartPrediction() {
               onChange={handleChange}
               required
             />
-            <button className="yesbg-docblue yestext-white yesp-4 yesrounded-lg" type="submit">Submit</button>
+            <button
+              className="yesbg-docblue yestext-white yesp-4 yesrounded-lg"
+              type="submit"
+            >
+              Submit
+            </button>
           </div>
         </form>
 
+        <p>prediction is {prediction}</p>
         {prediction !== null && (
           <div>
             <h3>Résultat de la prédiction :</h3>
