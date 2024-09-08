@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a [brief description of your project]. It utilizes React, Vite, JavaScript, Tailwind CSS, and Shadow DOM to create [mention what your project does or its purpose].
+This project utilizes React, Vite, JavaScript, Tailwind CSS, and Shadow DOM to create [mention what your project does or its purpose].
 
 ## Links : 
 Slides : https://www.canva.com/design/DAF-TK8qmlY/i__JF1r5jY4blSzb1lpnEg/edit?utm_content=DAF-TK8qmlY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
